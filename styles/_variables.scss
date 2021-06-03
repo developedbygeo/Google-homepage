@@ -1,0 +1,12 @@
+$lightblue: #4285f4;
+$red: #ea4335;
+$yellow: #fbbc05;
+$green: #34a853;
+$gray: #f2f2f2;
+
+@mixin flex($justify, $align, $dir) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $dir;
+}

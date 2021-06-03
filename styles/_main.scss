@@ -1,0 +1,121 @@
+.logo {
+  font-family: "Open Sans", sans-serif;
+}
+.main-header {
+  width: 97%;
+  margin: auto;
+  min-height: 5vh;
+}
+
+.nav {
+  @include flex(flex-end, center, row);
+
+  a {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .button-link {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  button {
+    background: #1a73e8;
+    color: white;
+    margin: 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+}
+.fa-ellipsis-h {
+  color: #5f6368;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.fa-ellipsis-h:hover {
+  opacity: 1;
+  background: #b3bac2;
+}
+main {
+  min-height: 90vh;
+  @include flex(center, center, column);
+}
+.logo {
+  padding: 2rem;
+}
+
+.search {
+  position: relative;
+  margin-top: 2rem;
+}
+.search-bar {
+  padding: 1rem 3.5rem;
+  width: 29vw;
+  border-radius: 2.4rem;
+  border: solid 0.5px #dfe1e5;
+  font-size: 1.7rem;
+  outline: none;
+}
+.search-bar:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  color: gray;
+  position: absolute;
+  top: 32%;
+  left: 2%;
+}
+.mic-icon {
+  position: absolute;
+  font-size: 1.5rem;
+  color: $lightblue;
+  top: 32%;
+  right: 2%;
+}
+
+.buttons {
+  margin: 2rem;
+  button {
+    margin: 0.5rem;
+    padding: 1rem 3rem;
+    border: none;
+    background: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+  }
+}
+
+footer {
+  min-height: 4vh;
+  background: $gray;
+  @include flex(space-between, center, row);
+  a {
+    color: #70757a;
+    margin-left: 1.5rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .links-left {
+    margin: 1rem;
+  }
+  .links-right {
+    margin: 1rem;
+  }
+}
