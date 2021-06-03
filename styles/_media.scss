@@ -1,0 +1,72 @@
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+  .logo-wrapper {
+    width: 60%;
+    text-align: center;
+  }
+  .logo {
+    width: 60%;
+  }
+  .search-bar {
+    width: 80vw;
+  }
+  .mic-icon {
+    display: none;
+  }
+  .keyboard-icon {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    color: $lightblue;
+    top: 32%;
+    right: 2%;
+    color: gray;
+  }
+
+  .links-left,
+  .links-right {
+    a {
+      font-size: 1.1rem;
+      margin-left: 1rem;
+    }
+  }
+  .links-left,
+  .links-right {
+    margin: 0;
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 321px) {
+  .links-left,
+  .links-right {
+    a {
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+    }
+  }
+}
+@media screen and (max-width: 240px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media screen and (min-width: 418px) and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .logo-wrapper {
+    width: 50%;
+    text-align: center;
+  }
+  .logo {
+    width: 50%;
+  }
+  .search-bar {
+    width: 60vw;
+  }
+}

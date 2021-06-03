@@ -4,7 +4,7 @@
 .main-header {
   width: 97%;
   margin: auto;
-  min-height: 5vh;
+  height: 5vh;
 }
 
 .nav {
@@ -44,7 +44,7 @@
   background: #b3bac2;
 }
 main {
-  min-height: 90vh;
+  height: 90vh;
   @include flex(center, center, column);
 }
 .logo {
@@ -83,6 +83,9 @@ main {
   top: 32%;
   right: 2%;
 }
+.keyboard-icon {
+  display: none;
+}
 
 .buttons {
   margin: 2rem;
@@ -102,20 +105,25 @@ main {
 }
 
 footer {
-  min-height: 4vh;
+  height: 5vh;
   background: $gray;
-  @include flex(space-between, center, row);
+
+  .link-wrapper {
+    @include flex(space-between, center, row);
+    width: 97%;
+    margin: auto;
+    height: 100%;
+  }
+}
+
+.links-left,
+.links-right {
+  margin: 1rem;
   a {
     color: #70757a;
     margin-left: 1.5rem;
   }
   a:hover {
     text-decoration: underline;
-  }
-  .links-left {
-    margin: 1rem;
-  }
-  .links-right {
-    margin: 1rem;
   }
 }

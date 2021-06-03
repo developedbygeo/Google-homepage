@@ -29,7 +29,7 @@ button {
 .main-header {
   width: 97%;
   margin: auto;
-  min-height: 5vh;
+  height: 5vh;
 }
 
 .nav {
@@ -78,7 +78,7 @@ button {
 }
 
 main {
-  min-height: 90vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +125,10 @@ main {
   right: 2%;
 }
 
+.keyboard-icon {
+  display: none;
+}
+
 .buttons {
   margin: 2rem;
 }
@@ -145,28 +149,104 @@ main {
 }
 
 footer {
-  min-height: 4vh;
+  height: 5vh;
   background: #f2f2f2;
+}
+
+footer .link-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  width: 97%;
+  margin: auto;
+  height: 100%;
 }
 
-footer a {
+.links-left,
+.links-right {
+  margin: 1rem;
+}
+
+.links-left a,
+.links-right a {
   color: #70757a;
   margin-left: 1.5rem;
 }
 
-footer a:hover {
+.links-left a:hover,
+.links-right a:hover {
   text-decoration: underline;
 }
 
-footer .links-left {
-  margin: 1rem;
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+  .logo-wrapper {
+    width: 60%;
+    text-align: center;
+  }
+  .logo {
+    width: 60%;
+  }
+  .search-bar {
+    width: 80vw;
+  }
+  .mic-icon {
+    display: none;
+  }
+  .keyboard-icon {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    color: #4285f4;
+    top: 32%;
+    right: 2%;
+    color: gray;
+  }
+  .links-left a,
+  .links-right a {
+    font-size: 1.1rem;
+    margin-left: 1rem;
+  }
+  .links-left,
+  .links-right {
+    margin: 0;
+  }
+  .links-left a,
+  .links-right a {
+    font-size: 1rem;
+  }
 }
 
-footer .links-right {
-  margin: 1rem;
+@media screen and (max-width: 321px) {
+  .links-left a,
+  .links-right a {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media screen and (min-width: 418px) and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .logo-wrapper {
+    width: 50%;
+    text-align: center;
+  }
+  .logo {
+    width: 50%;
+  }
+  .search-bar {
+    width: 60vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
